@@ -29,7 +29,7 @@ public class DynamicInstantiationExample {
        }
 
        public Foo(Double value) {
-           System.out.println("Constructor Foo(Double) invoked");
+           System.out.printf("Constructor Foo(Double) invoked, Parameter = %s\n", value);
        }
       
        public Foo(Reservation reservation) {
