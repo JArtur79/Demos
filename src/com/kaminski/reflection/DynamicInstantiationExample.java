@@ -25,7 +25,7 @@ public class DynamicInstantiationExample {
        }
 
        public Foo(int[] value) {
-           System.out.println("Constructor Foo(int[]) invoked");
+           System.out.printf("Constructor Foo(int[]) invoked, Parameter = %s\n", value[0]);
        }
 
        public Foo(Double value) {
