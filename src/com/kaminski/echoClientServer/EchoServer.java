@@ -7,6 +7,8 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import org.h2.tools.Server;
+
 public class EchoServer extends Thread {
 
 	private Socket client;
@@ -59,6 +61,7 @@ public class EchoServer extends Thread {
 
 		try {
 			// Hierüber werden eingehende Verbindungen aufgenommen
+			@SuppressWarnings("resource")
 			ServerSocket server = new ServerSocket(port);
 			System.out.println("EchoServer auf " + port + " gestartet ...");
 
